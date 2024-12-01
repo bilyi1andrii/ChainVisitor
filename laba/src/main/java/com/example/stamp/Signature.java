@@ -1,7 +1,7 @@
 package com.example.stamp;
 
 //Hi
-//Another hi
+//Another
 
 // import java.util.UUID;
 import java.util.function.Consumer;
