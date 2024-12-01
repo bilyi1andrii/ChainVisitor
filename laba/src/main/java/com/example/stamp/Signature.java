@@ -1,6 +1,5 @@
 package com.example.stamp;
 
-// Super check
 
 import java.util.function.Consumer;
 
