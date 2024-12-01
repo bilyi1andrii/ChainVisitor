@@ -12,8 +12,8 @@ public abstract class Banknote {
     }
 
 
-    public Banknote setNextItem(Banknote nextItem) {
-        this.nextItem = nextItem;
+    public Banknote setNextItem(Banknote nextBanknote) {
+        this.nextItem = nextBanknote;
         return this.nextItem;
 
     }
