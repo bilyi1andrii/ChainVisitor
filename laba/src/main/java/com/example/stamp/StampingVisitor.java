@@ -11,12 +11,12 @@ public class StampingVisitor implements Visitor {
     }
 
     @Override
-    public void visit(Task< ? > task) {
+    public void visit(Task<?> task) {
         task.setHeader("groupId", groupId);
     }
 
     @Override
-    public void visit(Group< ? > group) {
+    public void visit(Group<?> group) {
         group.setHeader("groupId", groupId);
         for (Task< ? > task : group.getTasks()) {
             task.accept(this);
@@ -24,7 +24,7 @@ public class StampingVisitor implements Visitor {
     }
 
     @Override
-    public void visit(Signature< ? > signature) {
+    public void visit(Signature<?> signature) {
         signature.setHeader("groupId", groupId);
     }
 
