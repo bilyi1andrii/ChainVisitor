@@ -1,9 +1,7 @@
 package com.example.stamp;
 
-//Hi
-//Another
 
-// import java.util.UUID;
+
 import java.util.function.Consumer;
 
 public class Signature<T> extends Task<T> {
