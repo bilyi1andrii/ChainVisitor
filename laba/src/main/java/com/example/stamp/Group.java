@@ -5,8 +5,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
+import lombok.Getter;
+
+@Getter
 public class Group<T> extends Task<T> {
-    public String groupUuid;
+    private String groupUuid;
     private List<Task<T>> tasks;
 
     public Group<T> addTask(Task<T> task) {

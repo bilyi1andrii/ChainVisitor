@@ -4,8 +4,9 @@ public class ATM {
     private Banknote firstTray;
     public ATM() {
 
-        firstTray = new Banknote100();
-        firstTray.setNextItem(new Banknote50()).setNextItem(new Banknote5());
+        firstTray = new BanknoteHundred();
+        firstTray.setNextItem(new BanknoteFifty())
+        .setNextItem(new BanknoteFive());
 
     }
 

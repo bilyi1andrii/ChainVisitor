@@ -1,13 +1,15 @@
 package com.example.money;
 
+import lombok.Getter;
+
+@Getter
 public abstract class Banknote {
+    private Banknote nextItem;
+    private int banknoteNominale;
 
     public Banknote(int banknoteNominale) {
         this.banknoteNominale = banknoteNominale;
     }
-
-
-    public Banknote nextItem;
 
 
     public Banknote setNextItem(Banknote nextItem) {
@@ -15,7 +17,6 @@ public abstract class Banknote {
         return nextItem;
 
     }
-    public int banknoteNominale;
 
     public void process(int amount) {
         int quantity = amount / banknoteNominale;

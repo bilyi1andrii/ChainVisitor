@@ -3,8 +3,11 @@ package com.example.stamp;
 
 import java.util.function.Consumer;
 
+import lombok.Getter;
+
+@Getter
 public class Signature<T> extends Task<T> {
-    public Consumer<T> consumer;
+    private Consumer<T> consumer;
     public Signature(Consumer<T> consumer) {
         this.consumer = consumer;
     }
