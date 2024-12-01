@@ -30,9 +30,18 @@ public class Group<T> extends Task<T> {
     }
 
     @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
     public void apply(T arg) {
         this.freeze();
         tasks = Collections.unmodifiableList(tasks);
+
+        StampingVisitor visitor = new StampingVisitor();
+        this.accept(visitor);
+
         for (Task<T> task: tasks) {
             task.apply(arg);
         }

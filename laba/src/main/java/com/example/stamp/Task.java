@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public abstract class Task<T> {
+public abstract class Task<T> implements Visitable{
     private String id;
     private Map<String, String> headers;
 
@@ -27,5 +27,10 @@ public abstract class Task<T> {
 
     public String getHeader(String header) {
         return headers.get(header);
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 }
