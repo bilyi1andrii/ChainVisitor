@@ -72,8 +72,8 @@ public class StampTests {
     @Test
     void testVisitorAssignsGroupId() {
         Group<Integer> group = new Group<>();
-        group.addTask(new Signature<>(x -> {}));
-        group.addTask(new Signature<>(x -> {}));
+        group.addTask(new Signature<>(x -> { }));
+        group.addTask(new Signature<>(x -> { }));
 
         StampingVisitor visitor = new StampingVisitor();
         group.accept(visitor);

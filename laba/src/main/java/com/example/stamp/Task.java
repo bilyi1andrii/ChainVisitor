@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public abstract class Task<T> implements Visitable{
+public abstract class Task<T> implements Visitable {
     private String id;
     private Map<String, String> headers;
 
