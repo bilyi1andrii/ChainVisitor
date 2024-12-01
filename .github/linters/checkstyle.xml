@@ -271,9 +271,7 @@
         <!-- Whitespace                                                                  -->
         <!-- http://checkstyle.sourceforge.net/config_whitespace.html                    -->
         <!-- =========================================================================== -->
-        <module name="GenericWhitespace">
-            <property name="allowWhitespaceAroundWildcardBounds" value="false"/>
-        </module>
+        <module name="GenericWhitespace"/>
         <module name="EmptyForInitializerPad"/>
         <module name="EmptyForIteratorPad"/>
         <module name="MethodParamPad"/>

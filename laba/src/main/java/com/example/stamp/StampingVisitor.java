@@ -18,7 +18,7 @@ public class StampingVisitor implements Visitor {
     @Override
     public void visit(Group<?> group) {
         group.setHeader("groupId", groupId);
-        for (Task< ? > task : group.getTasks()) {
+        for (Task<?> task : group.getTasks()) {
             task.accept(this);
         }
     }
